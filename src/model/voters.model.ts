@@ -17,40 +17,38 @@ const voterSchema = new Schema<IVoter>(
   {
     firstName: {
       type: String,
-      required: true
+      required: true,
     },
     lastName: {
       type: String,
-      required: true
+      required: true,
     },
     voterId: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     email: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     phoneNumber: {
       type: String,
-      unique: true
     },
     address: {
       type: String,
-      unique: true
     },
     voted: {
       type: Boolean,
       required: true,
-      default: false
+      default: false,
     },
     verified: {
       type: Boolean,
       required: true,
-      default: false
-    }
+      default: true,
+    },
   },
   {
     timestamps: true,
