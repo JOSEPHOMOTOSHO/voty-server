@@ -1,0 +1,6 @@
+version: '1'
+services:
+  voty_app:
+    image: voty-server
+    ports:
+      - 8081:3000
